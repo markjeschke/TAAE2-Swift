@@ -33,10 +33,10 @@
 @property (nonatomic, strong, readonly) AEDistortionModule * _Nonnull distortion;
 
 // Audio File Player modules
-@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull technodrums;
+@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull technobeat;
 @property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull bass;
-@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull drumbeat;
-@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull crystalline;
+@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull housebeat;
+@property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull melody;
 
 @property (nonatomic, strong, readonly) AEAudioFilePlayerModule * _Nonnull playback;
 @property (nonatomic, strong, readonly) AEAudioFileRecorderModule * _Nonnull recordedFile;

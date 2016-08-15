@@ -18,10 +18,10 @@
 @property (nonatomic, strong, readwrite) AEReverbModule * reverb;
 
 // Audio files
-@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * technodrums;
+@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * technobeat;
 @property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * bass;
-@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * drumbeat;
-@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * crystalline;
+@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * housebeat;
+@property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * melody;
 
 @property (nonatomic, strong, readwrite) AEAudioFilePlayerModule * playback;
 @property (nonatomic, strong, readwrite) AEAudioFileRecorderModule * recordedFile;
@@ -31,7 +31,6 @@
 @property (nonatomic, readwrite) BOOL playingRecording;
 @property (nonatomic, strong) AEManagedValue * recorderValue;
 @property (nonatomic, strong) AEManagedValue * playerValue;
-@property (nonatomic, strong) NSArray *documentsFolders;
 
 @property (nonatomic) AEHostTicks startTime;
 
@@ -58,25 +57,25 @@
     
     // Setup audio loops
     
-    NSURL * url = [[NSBundle mainBundle] URLForResource:@"technodrums" withExtension:@"m4a"];
-    _technodrums = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
-    _technodrums.loop = YES;
-    _technodrums.microfadeFrames = 32;
+    NSURL * url = [[NSBundle mainBundle] URLForResource:@"technobeat" withExtension:@"m4a"];
+    _technobeat = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
+    _technobeat.loop = YES;
+    _technobeat.microfadeFrames = 32;
     
     url = [[NSBundle mainBundle] URLForResource:@"bass" withExtension:@"m4a"];
     _bass = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
     _bass.loop = YES;
     _bass.microfadeFrames = 32;
     
-    url = [[NSBundle mainBundle] URLForResource:@"drumbeat" withExtension:@"m4a"];
-    _drumbeat = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
-    _drumbeat.loop = YES;
-    _drumbeat.microfadeFrames = 32;
+    url = [[NSBundle mainBundle] URLForResource:@"housebeat" withExtension:@"m4a"];
+    _housebeat = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
+    _housebeat.loop = YES;
+    _housebeat.microfadeFrames = 32;
     
-    url = [[NSBundle mainBundle] URLForResource:@"crystal" withExtension:@"m4a"];
-    _crystalline = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
-    _crystalline.loop = YES;
-    _crystalline.microfadeFrames = 32;
+    url = [[NSBundle mainBundle] URLForResource:@"melody" withExtension:@"m4a"];
+    _melody = [[AEAudioFilePlayerModule alloc] initWithRenderer:renderer URL:url error:NULL];
+    _melody.loop = YES;
+    _melody.microfadeFrames = 32;
     
     // Create the filters
   
@@ -89,7 +88,7 @@
   
     // Delay
     _delay = [[AEDelayModule alloc] initWithRenderer:renderer];
-    _delay.delayTime = _technodrums.duration/4;
+    _delay.delayTime = _technobeat.duration/4;
     _delay.feedback = 30.0;
     _delay.lopassCutoff = 15000.0;
     _delay.wetDryMix = 35.0;
@@ -124,16 +123,16 @@
         __unsafe_unretained AEAudioFilePlayerModule * player
         = (__bridge AEAudioFilePlayerModule *)AEManagedValueGetValue(playerValue);
       
-        AEModuleProcess(_crystalline, context); // Run player (pushes 1)
+        AEModuleProcess(_melody, context); // Run player (pushes 1)
       
-        // Apply distortion and delay filters to the first audio file, only.
+        // Apply distortion and delay filters to the 'melody' audio file, only.
         AEModuleProcess(_distortion, context); // Run filter (edits top buffer)
         AEModuleProcess(_delay, context); // Run filter (edits top buffer)
       
         // Add the remaining audio files.
         AEModuleProcess(_bass, context); // Run player (pushes 1)
-        AEModuleProcess(_drumbeat, context); // Run player (pushes 1)
-        AEModuleProcess(_technodrums, context); // Run player (pushes 1)
+        AEModuleProcess(_housebeat, context); // Run player (pushes 1)
+        AEModuleProcess(_technobeat, context); // Run player (pushes 1)
       
         // Mix all 4 audio file buffers
         AEBufferStackMix(context->stack, 4);
@@ -175,18 +174,18 @@
 }
 
 -(void) playBeatOne {
-  if (!_technodrums.playing) {
-    [_technodrums playAtTime:AETimeStampWithHostTicks(_startTime)];
+  if (!_technobeat.playing) {
+    [_technobeat playAtTime:AETimeStampWithHostTicks(_startTime)];
   } else {
-    [_technodrums stop];
+    [_technobeat stop];
   }
 }
 
 -(void) playBeatTwo {
-  if (!_drumbeat.playing) {
-    [_drumbeat playAtTime:AETimeStampWithHostTicks(_startTime)];
+  if (!_housebeat.playing) {
+    [_housebeat playAtTime:AETimeStampWithHostTicks(_startTime)];
   } else {
-    [_drumbeat stop];
+    [_housebeat stop];
   }
 }
 
@@ -199,10 +198,10 @@
 }
 
 -(void) playMelody {
-  if (!_crystalline.playing) {
-    [_crystalline playAtTime:AETimeStampWithHostTicks(_startTime)];
+  if (!_melody.playing) {
+    [_melody playAtTime:AETimeStampWithHostTicks(_startTime)];
   } else {
-    [_crystalline stop];
+    [_melody stop];
   }
 }
 

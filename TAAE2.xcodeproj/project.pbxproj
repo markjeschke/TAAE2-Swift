@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		171140D21D6285D10086CEA8 /* crystal.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 171140D11D6285D10086CEA8 /* crystal.m4a */; };
+		171140D61D628BFC0086CEA8 /* housebeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 171140D31D628BFC0086CEA8 /* housebeat.m4a */; };
+		171140D71D628BFC0086CEA8 /* melody.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 171140D41D628BFC0086CEA8 /* melody.m4a */; };
+		171140D81D628BFC0086CEA8 /* technobeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 171140D51D628BFC0086CEA8 /* technobeat.m4a */; };
 		177821351D3C416C005FD89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177821341D3C416C005FD89D /* AppDelegate.swift */; };
 		177821371D3C416C005FD89D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177821361D3C416C005FD89D /* ViewController.swift */; };
 		1778213A1D3C416C005FD89D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177821381D3C416C005FD89D /* Main.storyboard */; };
@@ -16,9 +18,6 @@
 		177821EB1D3C41BE005FD89D /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 177821E41D3C418D005FD89D /* libTheAmazingAudioEngine.a */; };
 		177821EF1D3C41E4005FD89D /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177821EE1D3C41E4005FD89D /* AEAudioController.m */; };
 		177821F61D3C4580005FD89D /* bass.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F11D3C4580005FD89D /* bass.m4a */; };
-		177821F81D3C4580005FD89D /* drumbeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F31D3C4580005FD89D /* drumbeat.m4a */; };
-		177821F91D3C4580005FD89D /* empty.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F41D3C4580005FD89D /* empty.m4a */; };
-		177821FA1D3C4580005FD89D /* technodrums.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F51D3C4580005FD89D /* technodrums.m4a */; };
 		17F7471A1D614339006862AA /* AudioShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F747191D614339006862AA /* AudioShareSDK.m */; };
 		17F7471C1D6143A1006862AA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F7471B1D6143A1006862AA /* MobileCoreServices.framework */; };
 		17F7471F1D617C42006862AA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F7471E1D617C42006862AA /* MessageUI.framework */; };
@@ -57,7 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		171140D11D6285D10086CEA8 /* crystal.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = crystal.m4a; sourceTree = "<group>"; };
+		171140D31D628BFC0086CEA8 /* housebeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = housebeat.m4a; sourceTree = "<group>"; };
+		171140D41D628BFC0086CEA8 /* melody.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = melody.m4a; sourceTree = "<group>"; };
+		171140D51D628BFC0086CEA8 /* technobeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = technobeat.m4a; sourceTree = "<group>"; };
 		177821311D3C416C005FD89D /* TAAE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAAE2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177821341D3C416C005FD89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177821361D3C416C005FD89D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +71,6 @@
 		177821ED1D3C41E4005FD89D /* AEAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioController.h; sourceTree = "<group>"; };
 		177821EE1D3C41E4005FD89D /* AEAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioController.m; sourceTree = "<group>"; };
 		177821F11D3C4580005FD89D /* bass.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.m4a; sourceTree = "<group>"; };
-		177821F31D3C4580005FD89D /* drumbeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = drumbeat.m4a; sourceTree = "<group>"; };
-		177821F41D3C4580005FD89D /* empty.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = empty.m4a; sourceTree = "<group>"; };
-		177821F51D3C4580005FD89D /* technodrums.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = technodrums.m4a; sourceTree = "<group>"; };
 		17F747181D614339006862AA /* AudioShareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioShareSDK.h; sourceTree = "<group>"; };
 		17F747191D614339006862AA /* AudioShareSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioShareSDK.m; sourceTree = "<group>"; };
 		17F7471B1D6143A1006862AA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -136,11 +134,10 @@
 		177821F01D3C4580005FD89D /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				171140D31D628BFC0086CEA8 /* housebeat.m4a */,
+				171140D41D628BFC0086CEA8 /* melody.m4a */,
+				171140D51D628BFC0086CEA8 /* technobeat.m4a */,
 				177821F11D3C4580005FD89D /* bass.m4a */,
-				171140D11D6285D10086CEA8 /* crystal.m4a */,
-				177821F31D3C4580005FD89D /* drumbeat.m4a */,
-				177821F41D3C4580005FD89D /* empty.m4a */,
-				177821F51D3C4580005FD89D /* technodrums.m4a */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -315,14 +312,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177821F81D3C4580005FD89D /* drumbeat.m4a in Resources */,
 				1778213F1D3C416C005FD89D /* LaunchScreen.storyboard in Resources */,
 				177821F61D3C4580005FD89D /* bass.m4a in Resources */,
-				177821FA1D3C4580005FD89D /* technodrums.m4a in Resources */,
-				177821F91D3C4580005FD89D /* empty.m4a in Resources */,
-				171140D21D6285D10086CEA8 /* crystal.m4a in Resources */,
+				171140D81D628BFC0086CEA8 /* technobeat.m4a in Resources */,
+				171140D61D628BFC0086CEA8 /* housebeat.m4a in Resources */,
 				1778213C1D3C416C005FD89D /* Assets.xcassets in Resources */,
 				1778213A1D3C416C005FD89D /* Main.storyboard in Resources */,
+				171140D71D628BFC0086CEA8 /* melody.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
