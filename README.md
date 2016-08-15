@@ -1,5 +1,3 @@
-README.md
-
 # TAAE2 with Swift
 
 This Xcode project demonstrates how to trigger audio loops, apply effects, and export audio, using Michael Tyson's [The Amazing Audio Engine 2](https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2).
