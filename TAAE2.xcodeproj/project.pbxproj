@@ -7,14 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		171140D21D6285D10086CEA8 /* crystal.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 171140D11D6285D10086CEA8 /* crystal.m4a */; };
 		177821351D3C416C005FD89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177821341D3C416C005FD89D /* AppDelegate.swift */; };
 		177821371D3C416C005FD89D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177821361D3C416C005FD89D /* ViewController.swift */; };
 		1778213A1D3C416C005FD89D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177821381D3C416C005FD89D /* Main.storyboard */; };
 		1778213C1D3C416C005FD89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1778213B1D3C416C005FD89D /* Assets.xcassets */; };
 		1778213F1D3C416C005FD89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1778213D1D3C416C005FD89D /* LaunchScreen.storyboard */; };
+		177821EB1D3C41BE005FD89D /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 177821E41D3C418D005FD89D /* libTheAmazingAudioEngine.a */; };
+		177821EF1D3C41E4005FD89D /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 177821EE1D3C41E4005FD89D /* AEAudioController.m */; };
+		177821F61D3C4580005FD89D /* bass.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F11D3C4580005FD89D /* bass.m4a */; };
+		177821F81D3C4580005FD89D /* drumbeat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F31D3C4580005FD89D /* drumbeat.m4a */; };
+		177821F91D3C4580005FD89D /* empty.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F41D3C4580005FD89D /* empty.m4a */; };
+		177821FA1D3C4580005FD89D /* technodrums.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 177821F51D3C4580005FD89D /* technodrums.m4a */; };
+		17F7471A1D614339006862AA /* AudioShareSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F747191D614339006862AA /* AudioShareSDK.m */; };
+		17F7471C1D6143A1006862AA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F7471B1D6143A1006862AA /* MobileCoreServices.framework */; };
+		17F7471F1D617C42006862AA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F7471E1D617C42006862AA /* MessageUI.framework */; };
+		17F9445A1D60C693007F953B /* TimecodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F944591D60C693007F953B /* TimecodeFormatter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		177821E31D3C418D005FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CDCAC981CA25A29008AAEF1;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		177821E51D3C418D005FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C9F0F741CB265F90032903E;
+			remoteInfo = "TheAmazingAudioEngine OS X";
+		};
+		177821E71D3C418D005FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C9F0FBC1CB269C30032903E;
+			remoteInfo = "TheAmazingAudioEngine tvOS";
+		};
+		177821E91D3C418D005FD89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CDCACA81CA25A6E008AAEF1;
+			remoteInfo = Tests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		171140D11D6285D10086CEA8 /* crystal.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = crystal.m4a; sourceTree = "<group>"; };
 		177821311D3C416C005FD89D /* TAAE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAAE2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177821341D3C416C005FD89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177821361D3C416C005FD89D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +65,19 @@
 		1778213B1D3C416C005FD89D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1778213E1D3C416C005FD89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177821401D3C416C005FD89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TheAmazingAudioEngine.xcodeproj; sourceTree = "<group>"; };
+		177821EC1D3C41E3005FD89D /* TAAE2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TAAE2-Bridging-Header.h"; sourceTree = "<group>"; };
+		177821ED1D3C41E4005FD89D /* AEAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioController.h; sourceTree = "<group>"; };
+		177821EE1D3C41E4005FD89D /* AEAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioController.m; sourceTree = "<group>"; };
+		177821F11D3C4580005FD89D /* bass.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.m4a; sourceTree = "<group>"; };
+		177821F31D3C4580005FD89D /* drumbeat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = drumbeat.m4a; sourceTree = "<group>"; };
+		177821F41D3C4580005FD89D /* empty.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = empty.m4a; sourceTree = "<group>"; };
+		177821F51D3C4580005FD89D /* technodrums.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = technodrums.m4a; sourceTree = "<group>"; };
+		17F747181D614339006862AA /* AudioShareSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioShareSDK.h; sourceTree = "<group>"; };
+		17F747191D614339006862AA /* AudioShareSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioShareSDK.m; sourceTree = "<group>"; };
+		17F7471B1D6143A1006862AA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		17F7471E1D617C42006862AA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		17F944591D60C693007F953B /* TimecodeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimecodeFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F7471F1D617C42006862AA /* MessageUI.framework in Frameworks */,
+				17F7471C1D6143A1006862AA /* MobileCoreServices.framework in Frameworks */,
+				177821EB1D3C41BE005FD89D /* libTheAmazingAudioEngine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +113,111 @@
 		177821331D3C416C005FD89D /* TAAE2 */ = {
 			isa = PBXGroup;
 			children = (
-				177821341D3C416C005FD89D /* AppDelegate.swift */,
-				177821361D3C416C005FD89D /* ViewController.swift */,
-				177821381D3C416C005FD89D /* Main.storyboard */,
-				1778213B1D3C416C005FD89D /* Assets.xcassets */,
-				1778213D1D3C416C005FD89D /* LaunchScreen.storyboard */,
-				177821401D3C416C005FD89D /* Info.plist */,
+				177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */,
+				17F747251D6185E7006862AA /* Controller */,
+				17F747271D618608006862AA /* View */,
+				17F747241D6185D6006862AA /* Model */,
+				17F747261D6185FC006862AA /* Supporting */,
 			);
 			path = TAAE2;
+			sourceTree = "<group>";
+		};
+		177821AE1D3C418C005FD89D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177821E41D3C418D005FD89D /* libTheAmazingAudioEngine.a */,
+				177821E61D3C418D005FD89D /* libTheAmazingAudioEngine OS X.a */,
+				177821E81D3C418D005FD89D /* libTheAmazingAudioEngine tvOS.a */,
+				177821EA1D3C418D005FD89D /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177821F01D3C4580005FD89D /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				177821F11D3C4580005FD89D /* bass.m4a */,
+				171140D11D6285D10086CEA8 /* crystal.m4a */,
+				177821F31D3C4580005FD89D /* drumbeat.m4a */,
+				177821F41D3C4580005FD89D /* empty.m4a */,
+				177821F51D3C4580005FD89D /* technodrums.m4a */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		17F7471D1D6143AA006862AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17F7471E1D617C42006862AA /* MessageUI.framework */,
+				17F7471B1D6143A1006862AA /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17F747211D61857A006862AA /* AudioShare */ = {
+			isa = PBXGroup;
+			children = (
+				17F747181D614339006862AA /* AudioShareSDK.h */,
+				17F747191D614339006862AA /* AudioShareSDK.m */,
+			);
+			name = AudioShare;
+			sourceTree = "<group>";
+		};
+		17F747221D618590006862AA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				17F944591D60C693007F953B /* TimecodeFormatter.swift */,
+				17F747211D61857A006862AA /* AudioShare */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		17F747231D6185A4006862AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17F747221D618590006862AA /* Utility */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		17F747241D6185D6006862AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				177821ED1D3C41E4005FD89D /* AEAudioController.h */,
+				177821EE1D3C41E4005FD89D /* AEAudioController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		17F747251D6185E7006862AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				177821361D3C416C005FD89D /* ViewController.swift */,
+				17F747231D6185A4006862AA /* Classes */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		17F747261D6185FC006862AA /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				177821341D3C416C005FD89D /* AppDelegate.swift */,
+				1778213B1D3C416C005FD89D /* Assets.xcassets */,
+				177821401D3C416C005FD89D /* Info.plist */,
+				177821EC1D3C41E3005FD89D /* TAAE2-Bridging-Header.h */,
+				177821F01D3C4580005FD89D /* Audio */,
+				17F7471D1D6143AA006862AA /* Frameworks */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		17F747271D618608006862AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				177821381D3C416C005FD89D /* Main.storyboard */,
+				1778213D1D3C416C005FD89D /* LaunchScreen.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +266,12 @@
 			mainGroup = 177821281D3C416C005FD89D;
 			productRefGroup = 177821321D3C416C005FD89D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 177821AE1D3C418C005FD89D /* Products */;
+					ProjectRef = 177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				177821301D3C416C005FD89D /* TAAE2 */,
@@ -117,12 +279,48 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		177821E41D3C418D005FD89D /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = 177821E31D3C418D005FD89D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		177821E61D3C418D005FD89D /* libTheAmazingAudioEngine OS X.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTheAmazingAudioEngine OS X.a";
+			remoteRef = 177821E51D3C418D005FD89D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		177821E81D3C418D005FD89D /* libTheAmazingAudioEngine tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libTheAmazingAudioEngine tvOS.a";
+			remoteRef = 177821E71D3C418D005FD89D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		177821EA1D3C418D005FD89D /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = 177821E91D3C418D005FD89D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		1778212F1D3C416C005FD89D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177821F81D3C4580005FD89D /* drumbeat.m4a in Resources */,
 				1778213F1D3C416C005FD89D /* LaunchScreen.storyboard in Resources */,
+				177821F61D3C4580005FD89D /* bass.m4a in Resources */,
+				177821FA1D3C4580005FD89D /* technodrums.m4a in Resources */,
+				177821F91D3C4580005FD89D /* empty.m4a in Resources */,
+				171140D21D6285D10086CEA8 /* crystal.m4a in Resources */,
 				1778213C1D3C416C005FD89D /* Assets.xcassets in Resources */,
 				1778213A1D3C416C005FD89D /* Main.storyboard in Resources */,
 			);
@@ -135,7 +333,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F9445A1D60C693007F953B /* TimecodeFormatter.swift in Sources */,
+				177821EF1D3C41E4005FD89D /* AEAudioController.m in Sources */,
 				177821371D3C416C005FD89D /* ViewController.swift in Sources */,
+				17F7471A1D614339006862AA /* AudioShareSDK.m in Sources */,
 				177821351D3C416C005FD89D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +452,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)\"";
 				INFOPLIST_FILE = TAAE2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oogamedia.TAAE2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAAE2/TAAE2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,10 +468,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)\"";
 				INFOPLIST_FILE = TAAE2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oogamedia.TAAE2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TAAE2/TAAE2-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +498,7 @@
 				177821451D3C416C005FD89D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
