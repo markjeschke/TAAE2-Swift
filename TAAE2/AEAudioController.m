@@ -173,6 +173,8 @@
     [self.output stop];
 }
 
+#pragma mark - Audio loop triggers
+
 -(void) playBeatOne {
   if (!_technobeat.playing) {
     [_technobeat playAtTime:AETimeStampWithHostTicks(_startTime)];
@@ -295,6 +297,8 @@
   if ( !player ) return;
   player.currentTime = recordingPlaybackPosition * player.duration;
 }
+
+#pragma mark - Export to AudioShare
 
 -(void)exportToAudioShare {
   NSArray *documentsFolders = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

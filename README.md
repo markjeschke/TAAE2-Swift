@@ -2,6 +2,8 @@
 
 This Xcode project demonstrates how to trigger audio loops, apply effects, and export audio, using Michael Tyson's [The Amazing Audio Engine 2](https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2).
 
+<img src="assets/screenshot.png" width="320" height="568" alt="Screenshot for TAAE2 app." />
+
 ### Features:
 
 * The audio engine is managed in the bridged Objective-C `AEAudioController` class.
