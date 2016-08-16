@@ -32,8 +32,6 @@
 @property (nonatomic, strong) AEManagedValue * recorderValue;
 @property (nonatomic, strong) AEManagedValue * playerValue;
 
-@property (nonatomic) AEHostTicks startTime;
-
 @end
 
 @implementation AEAudioController
@@ -44,7 +42,6 @@
 - (instancetype)init {
     if ( !(self = [super init]) ) return nil;
   
-    _startTime = AEHostTicksFromSeconds(0);
     _recordingName = @"Recorded TAAE2";
     _recordingFormat = @"m4a";
     _fullRecordingName = [NSString stringWithFormat:@"%@.%@",_recordingName, _recordingFormat];
@@ -177,7 +174,7 @@
 
 -(void) playBeatOne {
   if (!_technobeat.playing) {
-    [_technobeat playAtTime:AETimeStampWithHostTicks(_startTime)];
+    [_technobeat playAtTime:AETimeStampNone];
   } else {
     [_technobeat stop];
   }
@@ -185,7 +182,7 @@
 
 -(void) playBeatTwo {
   if (!_housebeat.playing) {
-    [_housebeat playAtTime:AETimeStampWithHostTicks(_startTime)];
+    [_housebeat playAtTime:AETimeStampNone];
   } else {
     [_housebeat stop];
   }
@@ -193,7 +190,7 @@
 
 -(void) playBassline {
   if (!_bass.playing) {
-    [_bass playAtTime:AETimeStampWithHostTicks(_startTime)];
+    [_bass playAtTime:AETimeStampNone];
   } else {
     [_bass stop];
   }
@@ -201,7 +198,7 @@
 
 -(void) playMelody {
   if (!_melody.playing) {
-    [_melody playAtTime:AETimeStampWithHostTicks(_startTime)];
+    [_melody playAtTime:AETimeStampNone];
   } else {
     [_melody stop];
   }
