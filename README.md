@@ -4,7 +4,7 @@ This Xcode project demonstrates how to trigger audio loops, apply effects, and e
 
 <img src="assets/screenshot.png" width="320" height="568" alt="Screenshot for TAAE2 app." />
 
-### Features:
+### Features & Specifications:
 
 * The audio engine is managed in the bridged Objective-C `AEAudioController` class.
 * 4 audio loops composed and exported from the [Korg Gadget](https://itunes.apple.com/us/app/korg-gadget/id791077159?mt=8&at=10l3KX&ct=github-gadget) iOS app.
