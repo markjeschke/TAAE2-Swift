@@ -113,8 +113,8 @@
 			children = (
 				177821AD1D3C418C005FD89D /* TheAmazingAudioEngine.xcodeproj */,
 				17F747241D6185D6006862AA /* Model */,
-				17F747251D6185E7006862AA /* Controller */,
 				17F747271D618608006862AA /* View */,
+				17F747251D6185E7006862AA /* Controller */,
 				17F747261D6185FC006862AA /* Supporting */,
 			);
 			path = TAAE2;
