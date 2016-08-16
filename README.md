@@ -1,6 +1,6 @@
 # TAAE2 with Swift
 
-This Xcode project demonstrates how to trigger audio loops, apply effects, and export audio (via [AudioShare](https://github.com/lijon/AudioShareSDK), email, AirDrop), using Michael Tyson's [The Amazing Audio Engine 2](https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2).
+This Xcode project demonstrates how to trigger audio loops, apply effects, and export audio (via [AudioShare](https://github.com/lijon/AudioShareSDK), email, AirDrop), using [The Amazing Audio Engine 2](https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2).
 
 <img src="assets/screenshot.png" width="320" height="568" alt="Screenshot for TAAE2 app." />
 
